@@ -4,16 +4,16 @@ Frontend Starter Kit
 Static Starter Kit with Bootstrap 3
 
 Contains:
-- Bootstrap 3.2.x - Sass or Less version
-- jQuery
-- Fontawesome 4.6.2 and Glyphicons
-- Ready-made favicon placeholders
-- Pure HTML (or Pug template engine)
-- Autoprefixer for CSS
-- Javascript linter
-- CSS/JS copy & Minifier
-- CSS Comber
-- Grunt watch & Notifier
+1. Bootstrap 3.2.x - Sass or Less version
+2. jQuery
+3. Fontawesome 4.6.2 and Glyphicons
+4. Ready-made favicon placeholders
+5. Pure HTML (or Pug template engine)
+6. Autoprefixer for CSS
+7. Javascript linter
+8. CSS/JS copy & Minifier
+9. CSS Comber
+10. Grunt watch & Notifier
 
 Prerequisites
 -----------
