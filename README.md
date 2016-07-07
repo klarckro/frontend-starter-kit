@@ -6,9 +6,9 @@ Static Starter Kit with Bootstrap 3
 Contains:
 	- Bootstrap 3.2.x - Sass or Less version
 	- jQuery
-	- Fontawesome and Glyphicons
+	- Fontawesome 4.6.2 and Glyphicons
 	- Ready-made favicon placeholders
-	- Pure HTML or Pug template engine
+	- Pure HTML (or Pug template engine)
 	- Autoprefixer for CSS
 	- Javascript linter
 	- CSS/JS copy & Minifier

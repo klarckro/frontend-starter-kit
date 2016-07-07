@@ -3,9 +3,13 @@
 @import "bootstrap/bootstrap";
 
 
+//== Custom variables
+//## Overwrite the default Bootstrap variables
+@import "modules/variables";
+
 //== Libraries
 //## External Libraries Like Webfonts or Commonly Used jQuery Plugins
-//@import "libs/font-awesome/font-awesome.less";
+@import "libs/font-awesome/font-awesome.scss";
 
 
 //== Core CSS
@@ -32,6 +36,11 @@
 //== Utility Classes
 //## Helper Classes
 @import "modules/animations";
+
+
+//== Styleguide Classes
+//## Only Styleguide Frame Classes
+@import "modules/styleguide";
 
 
 //== Shame.scss
