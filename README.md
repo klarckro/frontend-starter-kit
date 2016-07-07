@@ -3,7 +3,9 @@ Frontend Starter Kit
 
 Static Starter Kit with Bootstrap 3
 
-Contains:
+Contains
+-----------
+
 1. Bootstrap 3.2.x - Sass or Less version
 2. jQuery
 3. Fontawesome 4.6.2 and Glyphicons
@@ -33,10 +35,9 @@ Grunt Setup
 5.  Done :)
 
 
-What this does
+What this does (what Grunt will do)
 -----------
 
-Grunt will run the following tasks (v. 1.0, master branch):
 1. Check the Sass files for missing variables, syntax errors, bad mixins etc.
 2. Check the Javascript for missing functions, bad variables etc.
 3. Combine and process the Sass files into one css file
