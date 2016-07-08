@@ -59,16 +59,18 @@ module.exports = function(grunt) {
             bootstrap: {
               src: [
                 'assets/js/vendor/jquery-plugins/bootstrap/util.js',
+                'assets/js/vendor/jquery-plugins/bootstrap/transition.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/alert.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/button.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/carousel.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/collapse.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/dropdown.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/modal.js',
+                'assets/js/vendor/jquery-plugins/bootstrap/tooltip.js',
+                'assets/js/vendor/jquery-plugins/bootstrap/popover.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/scrollspy.js',
                 'assets/js/vendor/jquery-plugins/bootstrap/tab.js',
-                'assets/js/vendor/jquery-plugins/bootstrap/tooltip.js',
-                'assets/js/vendor/jquery-plugins/bootstrap/popover.js'
+                'assets/js/vendor/jquery-plugins/bootstrap/affix.js'
               ],
               dest: 'assets/js/vendor/jquery-plugins/jquery.bootstrap.js'
             },

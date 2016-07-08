@@ -5833,15 +5833,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /*!
- *  Font Awesome 4.6.2 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/fonts/fontawesome-webfont.eot?v=4.6.2");
-  src: url("/assets/fonts/fontawesome-webfont.eot?v=4.6.2#iefix") format("embedded-opentype"), url("/assets/fonts/fontawesome-webfont.woff2?v=4.6.2") format("woff2"), url("/assets/fonts/fontawesome-webfont.woff?v=4.6.2") format("woff"), url("/assets/fonts/fontawesome-webfont.ttf?v=4.6.2") format("truetype"), url("/assets/fonts/fontawesome-webfont.svg?v=4.6.2#fontawesomeregular") format("svg");
+  src: url("/assets/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("/assets/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("/assets/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("/assets/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("/assets/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -8011,6 +8011,14 @@ button.close {
 .fa-themeisle:before {
   content: ""; }
 
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: ""; }
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: ""; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -8029,8 +8037,45 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #337ab7;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #333333;
+    text-decoration: underline; }
+
 body {
   padding-top: 50px; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
 
 @media screen and (max-width: 767px) {
   .btn-block-xs {

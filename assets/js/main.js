@@ -17,11 +17,11 @@
  * }());
  */
 
-jQuery( document ).ready( function( $ ) {
-    App.setup();
-} );
+jQuery(document).ready(function($) {
+  App.setup();
+});
 
-$( window ).resize( function() {
+$(window).resize(function() {
 
   //Resize Stuff
-} );
+});

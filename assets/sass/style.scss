@@ -1,48 +1,61 @@
 //== Bootstrap
 //## Import Base Bootstrap Classes and Variable Overwrites. This shouldn't be touched.
-@import "bootstrap/bootstrap";
+@import
+	'vendor/bootstrap/bootstrap';
 
 
-//== Custom variables
-//## Overwrite the default Bootstrap variables
-@import "modules/variables";
+//== Configurations & variables
+//## Overwrite the default Bootstrap variables and define settings & mixins
+@import
+  'abstracts/animations',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/shame',
+  'abstracts/variables';
+
 
 //== Libraries
 //## External Libraries Like Webfonts or Commonly Used jQuery Plugins
-@import "libs/font-awesome/font-awesome.scss";
+@import
+	'libs/font-awesome/font-awesome.scss';
 
 
-//== Core CSS
+//== Base CSS
 //## Global Elements/Typography/Forms etc.
-@import "modules/general";
-@import "modules/type";
-@import "modules/forms";
-@import "modules/buttons";
+@import
+  'base/base',
+  'base/fonts',
+  'base/general',
+  'base/helpers',
+  'base/typography';
 
 
 //== Components
 //## Reusable Components and Elements;
-@import "modules/loader";
-@import "modules/navigation";
-@import "modules/panels";
-@import "modules/box";
+@import
+  'components/box',
+  'components/buttons',
+  'components/forms',
+  'components/loader',
+  'components/panels';
 
 
-//== Sections
-//## Section-Specific Components and Elements;
-@import "modules/footer";
+//== Layout
+//## Layout-Specific Components and Elements;
+@import
+  'layout/footer',
+  'layout/header',
+  'layout/navigation';
 
 
-//== Utility Classes
-//## Helper Classes
-@import "modules/animations";
+//== Page-specific Classes
+//## Specific classes for individual pages
+@import
+  'pages/home',
+  'pages/styleguide';
 
 
-//== Styleguide Classes
-//## Only Styleguide Frame Classes
-@import "modules/styleguide";
-
-
-//== Shame.scss
-//## http://csswizardry.com/2013/04/shame-css/
-@import "modules/shame";
+//== Theme-specific Classes
+//## Specific classes for themes
+@import
+  'themes/default';
