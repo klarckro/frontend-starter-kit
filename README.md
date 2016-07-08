@@ -51,10 +51,10 @@ What this does (what Grunt will do)
 
 Development
 -----------
-1. HTML: Work on the /index.html file and the /partials
-2. Sass: Work with the assets/sass/style.scss and assets/sass/modules/
-3. JS: Work with the assets/js/src/App.js for your general functions
-3a. jQuery plugins can be put in assets/js/vendor/jquery-plugins
-4. Images: Place your images in the assets/img folder. They will be copied to /dist
-5. Browser requirements: Set the browser versions in grunt/configBridge.json
-6. CSSComb: Set the rules in grunt/csscomb.json
+1. **HTML**: Work on the */index.html* file and the */partials*
+2. **Sass**: Work with the *assets/sass/style.scss and assets/sass* files in abstracts/base/components/layout/pages/themes/vendor. Do not touch the *vendor/bootstrap* folder
+3. **JS**: Work with the *assets/js/src/App.js* for your general functions, such as jQuery
+3a. **jQuery plugins** can be put in *assets/js/vendor/jquery-plugins*
+4. **Images**: Place your images in the assets/img folder. They will be copied to /dist
+5. **Browser requirements**: Set the browser versions in **grunt/configBridge.json**
+6. **CSSComb**: Set the rules in *grunt/csscomb.json*
