@@ -1,0 +1,10 @@
+//== Components
+//## Buttons
+
+
+// Add class for full-width mobile buttons
+@media screen and (max-width: $screen-xs-max) {
+    .btn-block-xs {
+        width: 100%;
+    }
+}
