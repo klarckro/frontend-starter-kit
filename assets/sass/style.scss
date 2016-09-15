@@ -1,0 +1,61 @@
+//== Bootstrap
+//## Import Base Bootstrap Classes and Variable Overwrites. This shouldn't be touched.
+@import
+	'vendor/bootstrap/bootstrap';
+
+
+//== Configurations & variables
+//## Overwrite the default Bootstrap variables and define settings & mixins
+@import
+  'abstracts/animations',
+  'abstracts/functions',
+  'abstracts/mixins',
+  'abstracts/shame',
+  'abstracts/variables';
+
+
+//== Libraries
+//## External Libraries Like Webfonts or Commonly Used jQuery Plugins
+@import
+	'libs/font-awesome/font-awesome.scss';
+
+
+//== Base CSS
+//## Global Elements/Typography/Forms etc.
+@import
+  'base/base',
+  'base/fonts',
+  'base/general',
+  'base/helpers',
+  'base/typography';
+
+
+//== Components
+//## Reusable Components and Elements;
+@import
+  'components/box',
+  'components/buttons',
+  'components/forms',
+  'components/loader',
+  'components/panels';
+
+
+//== Layout
+//## Layout-Specific Components and Elements;
+@import
+  'layout/footer',
+  'layout/header',
+  'layout/navigation';
+
+
+//== Page-specific Classes
+//## Specific classes for individual pages
+@import
+  'pages/home',
+  'pages/styleguide';
+
+
+//== Theme-specific Classes
+//## Specific classes for themes
+@import
+  'themes/default';

@@ -1,0 +1,11 @@
+//== Base CSS
+//## Helpers
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}

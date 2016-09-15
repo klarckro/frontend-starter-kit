@@ -1,0 +1,22 @@
+//== Pages
+//## Styleguide
+
+.bs-docs-section {
+    margin-top: 6em;
+}
+
+.bs-component {
+    position: relative;
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        display: block;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+}
