@@ -100,6 +100,21 @@ module.exports = function(grunt) {
             }
         },
 
+        // bowercopy: {
+        //     options: {
+        //         srcPrefix: 'bower_components',
+        //         destPrefix: '<%= config.dist.assets %>'
+        //     },
+        //     dist: {
+        //         files: [
+        //           {'jquery': 'jquery/dist'},
+        //           {'bootstrap': 'bootstrap/dist'},
+        //           {'font-awesome/css': 'font-awesome/css'},
+        //           {'font-awesome/fonts': 'font-awesome/fonts'}
+        //         ]
+        //     },
+        // },
+
         uglify: {
             options: {
               compress: {
@@ -235,24 +250,10 @@ module.exports = function(grunt) {
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-csslint');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-bootlint');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-notify');
-    grunt.loadNpmTasks('grunt-include-replace');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-html');
-    grunt.loadNpmTasks('grunt-csscomb');
-    grunt.loadNpmTasks("grunt-jscs");
+      require('load-grunt-tasks')(grunt, {
+        scope: 'devDependencies',
+        pattern: ['grunt-*']
+      });
 
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.

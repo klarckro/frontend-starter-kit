@@ -4,8 +4,11 @@ results
 
 npm-debug.log
 node_modules
+bower_components
 .sass-cache
 
 dist
 
 assets/css
+assets/css/style.css
+assets/style.min.css

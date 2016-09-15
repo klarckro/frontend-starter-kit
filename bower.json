@@ -1,0 +1,29 @@
+{
+  "name": "frontend-static",
+  "description": "Frontend Starter Kit",
+  "main": "",
+  "authors": [
+    "Robin Klärck <r.klaerck@insign.ch>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Frontend",
+    "Website",
+    "Template",
+    "Starter"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0"
+  }
+}
