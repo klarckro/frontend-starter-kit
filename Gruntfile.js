@@ -203,6 +203,7 @@ module.exports = function(grunt) {
             html: {
                 // Files to perform replacements and includes with
                 src: '*.html',
+                expand: true,
                 // Destination directory to copy files to
                 dest: 'dist/'
             }
@@ -250,10 +251,24 @@ module.exports = function(grunt) {
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
-      require('load-grunt-tasks')(grunt, {
-        scope: 'devDependencies',
-        pattern: ['grunt-*']
-      });
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-csslint');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-bootlint');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-notify');
+    grunt.loadNpmTasks('grunt-include-replace');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-html');
+    grunt.loadNpmTasks('grunt-csscomb');
+    grunt.loadNpmTasks("grunt-jscs");
 
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
